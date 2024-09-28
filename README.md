@@ -108,7 +108,7 @@ package.json:
 ```json
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@MyOrg"
-  },
+  }
 ```
 
 Unless you are using a continuous integration service such as GitHub Actions, assure that your `dist/` folder is cleanly build. Note that `npm publish` will ship anything inside the distributable folder.
@@ -178,7 +178,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 ```
 
-For private GitHub NPM packages, use the following workflow:
+For private GitHub packages, use the following workflow:
 
 ```yml
 name: Publish Package to GitHub Packages
@@ -231,7 +231,7 @@ package.json:
     "access": "public",
     "registry": "https://registry.npmjs.org/",
     "scope": "username"
-  },
+  }
 ```
 
 For more information, see:
